@@ -243,3 +243,241 @@ h2 {
     height: 50px;
     image-rendering: pixelated; 
 }
+
+.skills-container {
+    background-color: #1c2a3a; /* Match the achievements background */
+    border: 4px solid #0f1a26; /* Same border as achievements */
+    border-radius: 8px;
+    width: 350px;
+    margin: 0 auto;
+    font-family: 'Press Start 2P', sans-serif; /* Consistent font style */
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.skills-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #223044; /* Dark header background from achievements */
+    padding: 10px;
+    border-bottom: 4px solid #1a252f;
+}
+
+.skills-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #f1c40f; /* Yellow text, matching the trophy color */
+}
+
+.skill-points {
+    background-color: #2d3c4b; /* Slightly darker background */
+    color: #f1c40f; /* Yellow font color */
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid #1a252f; /* Match other borders */
+}
+
+.skills-list {
+    padding: 10px;
+}
+
+.skill-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d3c4b; /* Same background as achievement rows */
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    border: 4px solid #1a252f; /* Consistent border style */
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.skill-name {
+    font-size: 1.0rem;
+    color: #f1c40f; /* Yellow for skill names */
+    flex: 2;
+}
+
+.skill-value {
+    font-size: 1.2rem;
+    color: white; /* White value text */
+    text-align: center;
+    flex: 1;
+}
+
+.skill-btn {
+    background-color: #223044; /* Darker button background */
+    color
+
+}
+
+.hobbies-container {
+    background-color: #1c2a3a; /* Dark background, same as achievements */
+    padding: 20px;
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    border: 4px solid #0f1a26; /* Game-like border */
+    text-align: center;
+}
+
+.hobbies-container h2 {
+    font-size: 2.5rem;
+    color: #f1c40f; /* Golden header */
+    margin-bottom: 20px;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.hobby-card {
+    background-color: #2d3c4b; /* Slightly lighter card background */
+    border: 4px solid #1a252f; /* Same as achievements border */
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.hobby-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #f1c40f; /* Bright yellow glow on hover */
+}
+
+.hobby-card img {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated; /* Retro pixelated style */
+    margin-bottom: 10px;
+}
+
+.hobby-card p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.projects-container {
+    background-color: #1c2a3a; /* Match achievements and hobbies */
+    padding: 20px;
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    border: 4px solid #0f1a26;
+    text-align: center;
+}
+
+.projects-container h2 {
+    font-size: 2.5rem;
+    color: #f1c40f; /* Golden header */
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: stretch;
+}
+
+.project-card {
+    background-color: #2d3c4b; /* Dark card background */
+    border: 4px solid #1a252f;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #f1c40f;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.card-header img {
+    width: 50px;
+    height: 50px;
+    image-rendering: pixelated; /* Retro style */
+}
+
+.card-header h3 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.project-card p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #ecf0f1;
+}
+
+.status {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.status-completed {
+    color: #2ecc71; /* Green for completed */
+    font-weight: bold;
+}
+
+.status-progress {
+    color: #f1c40f; /* Yellow for in progress */
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #34495e; /* Dark bar background */
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #f1c40f; /* Yellow progress */
+}
+
+.project-card {
+    border: 4px solid #34495e;
+    box-shadow: 0 0 15px #0f1a26;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 20px #f1c40f;
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 5px #f1c40f, 0 0 10px #f1c40f;
+    }
+    50% {
+        text-shadow: 0 0 20px #f1c40f, 0 0 30px #f1c40f;
+    }
+}
+
+.projects-container h2 {
+    animation: glow 1.5s infinite;
+}
